@@ -14,10 +14,16 @@
     <script src="https://code.jquery.com/jquery-3.6.0.slim.js" integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
 	
   <body> 
+	  
 <div id='id'></div>
 		
+<div id="loadView"></div>
+<button onclick="loadCode();">TEST</button>
+
 <script type="text/javascript">
-   $('#id').load('a.html');
+var loadCode = function() {
+   $('#id').load('code.html');
+}
 </script>
 		
     </body>
