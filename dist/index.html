@@ -74,7 +74,7 @@
 
     <ul class="player__playlist list">
 
-      <li class="player__song" onclick="document.getElementById('1').style.display='none';">
+      <li class="player__song" onclick="openCloseToc()">
 
         <img class="player__img img" src="http://physical-authority.surge.sh/imgs/1.jpg" alt="cover">
 
@@ -94,13 +94,23 @@
 
       </li>
       
-      <li id='1' style='margin-bottom: .5em;padding-bottom: .7em;border-bottom: .1em solid #d8d8d859;font-size:11px;'>
+      <li id='toc-content' style='margin-bottom: .5em;padding-bottom: .7em;border-bottom: .1em solid #d8d8d859;font-size:11px;'>
       
-        Uh-huh, uh-huh<br>
+Uh-huh, uh-huh<br>
 Uh-huh, uh-huh (prrr)<br>
 BLACKPINK in your area<br>
       
       </li>
+
+<script>
+  function openCloseToc() {
+    if(document.getElementById('toc-content').style.display === 'block') {
+      document.getElementById('toc-content').style.display = 'none';
+    } else {
+      document.getElementById('toc-content').style.display = 'block';
+    }
+  }
+</script>      
       
       <li class="player__song">
 
