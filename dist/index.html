@@ -83,7 +83,7 @@
           <b class="player__song-name">no time</b>
           <span class="flex">
 
-            <span class="player__title">lastlings</span>
+            <span class="player__title" onclick="document.getElementById('dipslay').style.display='none';">가사보기</span>
             <span class="player__song-time"></span>
 
           </span>
@@ -91,9 +91,11 @@
         </p>
 
         <audio class="audio" src="http://physical-authority.surge.sh/music/1.mp3"></audio>
-        <div onclick="document.getElementById('fire1').style.display='none';">가사보기</div>
+        
+        <div style='width:100%;font-size:11px' id='dipslay'>asdasdasd</div>
+        
       </li>
-
+      
       <li class="player__song">
 
         <img class="player__img img" src="http://physical-authority.surge.sh/imgs/2.jpg" alt="cover">
